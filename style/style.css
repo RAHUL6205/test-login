@@ -1,0 +1,38 @@
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-container {
+  border: 1px solid rgb(192, 192, 192);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+.form-control {
+  border: 1px solid rgb(192, 192, 192);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.submit-button {
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #1a73e8da;
+}
+:focus {
+  outline: none;
+}
+.form-control:focus {
+  border: 1px solid #1a73e8;
+}
+.login-title {
+  text-align: center;
+}

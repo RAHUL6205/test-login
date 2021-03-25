@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="login-title">Login</h2>
+        <form action="">
+            <div>
+                <input class="form-control" type="email" placeholder="Enter your Email" required />
+            </div>
+            <div>
+                <input class="form-control" type="password" placeholder="Enter your Password" id="passwordVisible"
+                    required />
+            </div>
+            <div>
+                <input class="form-control" type="checkbox" id="passwordToggle" onclick="togglePassword();">
+                <label for="passwordToggle"><span id="passwordToggleText">Show Password</span></label>
+            </div>
+            <div>
+                <button class="submit-button" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var x = document.getElementById("passwordVisible");
+            var y = document.getElementById("passwordToggleText");
+            if (x.type === "password") {
+                x.type = "text";
+                y.innerHTML = "Hide Password";
+            } else {
+                x.type = "password";
+                y.innerHTML = "Show Password";
+            }
+        }
+    </script>
+</body>
+
+</html>
